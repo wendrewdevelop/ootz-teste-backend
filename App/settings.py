@@ -42,7 +42,8 @@ DEFAULT_APPS = [
 
 PROJECT_APPS = [
     'App.Core',
-    'App.Produto'
+    'App.Produto',
+    'App.Kit',
 ]
 
 THIRDY_APPS = [
