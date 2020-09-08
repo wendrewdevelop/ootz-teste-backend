@@ -1,10 +1,11 @@
-from rest_framework.viewsets import ViewSet
+from rest_framework.viewsets import ModelViewSet
+from rest_framework import filters
 from App.Kit.api.serializers import KitSerializer
 from App.Kit.models import KitProduto
 
 
 class KitViewset(ModelViewSet):
-    serializer_class = KitProduto
+    serializer_class = KitSerializer
     filter_backends = (filters.SearchFilter,)
     search_fields = ('id', 'nome_kit')
 
